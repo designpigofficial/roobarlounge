@@ -5,16 +5,24 @@ const theme = extendTheme({
   semanticTokens: {
     colors: {
       primary: {
-        default: 'orange.600',
-        _dark: 'orange.300',
+        default: "#1f01b9",
+        _dark: "#340bfe",
+      },
+      secondary: {
+        default: "#09a129",
+        _dark: "#0de73d",
+      },
+      tertiary: {
+        default: "#8d89a6",
+        _dark: "#b0aec2",
       },
     },
   },
   styles: {
     global: (props: StyleFunctionProps) => ({
       body: {
-        color: mode('gray.800', 'whiteAlpha.900')(props),
-        bg: mode('white', 'gray.900')(props),
+        color: mode("#333333", "#eaf2ef")(props),
+        bg: mode("#eaf2ef", "#333333")(props),
       },
     }),
   },

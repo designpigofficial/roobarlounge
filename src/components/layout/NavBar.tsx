@@ -2,6 +2,9 @@ import { useRouter } from 'next/router';
 
 import { Box, Flex, HStack, useColorModeValue as mode } from '@chakra-ui/react';
 import { IconType } from 'react-icons';
+import { BiMessageRoundedDetail } from 'react-icons/bi'
+import { GiBarStool, GiWineBottle, GiPriceTag } from 'react-icons/gi';
+import { MdEventNote, MdOutlineEventAvailable } from 'react-icons/md';
 
 import ColorModeSwitcher from '@/components/ColorModeSwitcher';
 import Container from '@/components/Container';
@@ -16,9 +19,12 @@ export type NavLinksType = {
 }[];
 
 const links: NavLinksType = [
-  // { label: 'Home', href: '/', icon: HiHome },
-  // { label: 'Projects', href: '/projects', icon: HiOutlineInformationCircle },
-  // { label: 'About', href: '/about', icon: HiBriefcase },
+  { label: 'The Club', href: '/about', icon: GiBarStool },
+  { label: 'Events', href: '/events', icon: MdEventNote },
+  { label: 'Bottle Service', href: '/vip', icon: GiWineBottle },
+  { label: 'Nightly Specials', href: '/specials', icon: GiPriceTag },
+  { label: 'Book Event', href: '/booking', icon: MdOutlineEventAvailable },
+  { label: 'Contact Us', href: '/contact', icon: BiMessageRoundedDetail },
 ];
 
 const NavBar = () => {
