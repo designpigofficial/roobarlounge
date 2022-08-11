@@ -11,10 +11,13 @@ const Footer = () => {
       alignItems='center'
       justifyContent='center'
       w='100%'
-      minH='4rem'
+      minH='3rem'
     >
-      <Text fontSize='sm'>
-        © Muhammad Rizqi Tsani {new Date().getFullYear()}
+      <Text fontSize='sm' textAlign='center'>
+        © Roo Bar Lounge, Denver {new Date().getFullYear()}
+      </Text>
+      <Text fontSize='xs' textAlign='center' color='pink'>
+        site design by © Abner Development {new Date().getFullYear()}
       </Text>
     </Container>
   );

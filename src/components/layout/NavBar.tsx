@@ -19,12 +19,12 @@ export type NavLinksType = {
 }[];
 
 const links: NavLinksType = [
-  { label: 'The Club', href: '/about', icon: GiBarStool },
-  { label: 'Events', href: '/events', icon: MdEventNote },
-  { label: 'Bottle Service', href: '/vip', icon: GiWineBottle },
-  { label: 'Nightly Specials', href: '/specials', icon: GiPriceTag },
-  { label: 'Book Event', href: '/booking', icon: MdOutlineEventAvailable },
-  { label: 'Contact Us', href: '/contact', icon: BiMessageRoundedDetail },
+  { label: 'The Club', href: '#club', icon: GiBarStool },
+  { label: 'Events', href: '#events', icon: MdEventNote },
+  { label: 'Bottle Service', href: '#bottle', icon: GiWineBottle },
+  { label: 'Nightly Specials', href: '#nightly', icon: GiPriceTag },
+  { label: 'Book Event', href: '#forms', icon: MdOutlineEventAvailable },
+  { label: 'Contact Us', href: '#forms', icon: BiMessageRoundedDetail },
 ];
 
 const NavBar = () => {
