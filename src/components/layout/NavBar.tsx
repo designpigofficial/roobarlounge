@@ -37,8 +37,8 @@ const NavBar = () => {
       top={0}
       zIndex={5}
       width='full'
-      bg={mode('rgba(255, 255, 255, 0.8)', 'rgba(23, 25, 35, 0.8)')}
-      style={{ backdropFilter: 'blur(8px)' }}
+      bg={mode('rgba(230, 230, 255, 0.8)', 'rgba(23, 25, 45, 0.8)')}
+      style={{ backdropFilter: 'blur(10px)' }}
     >
       <Container
         as='nav'

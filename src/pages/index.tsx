@@ -1,17 +1,13 @@
 import * as React from 'react';
 
 import {
-  Button,
-  Heading,
-  HStack,
-  Image,
-  Link,
-  Text,
   VStack,
 } from '@chakra-ui/react';
 
 import Container from '@/components/Container';
 import Layout from '@/components/layout';
+
+import Hero from '../components/Hero';
 
 const HomePage = () => {
   return (
@@ -22,10 +18,10 @@ const HomePage = () => {
           id='hero'
           justify='center'
           minHeight={{ base: 'calc(100vh - 7.5rem)', md: 'calc(100vh - 8rem)' }}
-          spacing={6}
+          spacing={0}
           bgColor='pink.900'
         >
-          <h6>hero</h6>
+          <Hero />
         </VStack>
         <VStack
           as='section'
